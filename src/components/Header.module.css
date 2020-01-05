@@ -1,0 +1,45 @@
+.header {
+		padding: 20px 0 0 10;
+	  position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 72px;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    z-index: 1;
+}
+
+.logo {
+	padding-top: 7px;
+}
+
+.sign {
+	margin: auto;
+  font-size: 13px;
+  font-weight: 500;
+
+  width: 78px;
+  height: 40px;
+
+  color: #1d1d1d;
+  border-radius: 2px solid #f2f2f2;
+  background-color: #fff;
+}
+
+.sign:hover {
+	background: #f2f2f2;
+	}
+
+.basket {
+	margin: auto;
+	outline: none;
+	background-color: #fff;
+}
+
+.basket:hover {
+	background: #f2f2f2;
+	}
+

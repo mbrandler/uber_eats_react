@@ -28,9 +28,9 @@ class Restaurant extends Component {
 
 	render () {
 		return (
-					
-					<Card restaurantData={this.props.restaurantData} />
-					
+					<div className='container'>
+						<Card restaurantData={this.props.restaurantData} />
+					</div>
 			)
 	}
 }

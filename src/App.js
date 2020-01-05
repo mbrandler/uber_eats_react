@@ -29,6 +29,10 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <div className='container'>
+          <input type="text" class="search-form" placeholder="Поиск по ресторанам и кухням" />
+          <h1>Рестораны в Москве</h1>
+        </div>
         <Restaurant restaurantData={restaurants} />
       </div>
     );
