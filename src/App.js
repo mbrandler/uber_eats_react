@@ -11,6 +11,7 @@ import Pizz from './img/Stores/PIZZELOVE.png';
 import Zю from './img/Stores/Zю.png';
 import bq from './img/Stores/bq.png';
 import Header from './components/Header.js'
+import Footer from './components/Footer.js'
 
 const restaurants = [
   { img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин' },
@@ -34,6 +35,7 @@ class App extends Component {
           <h1>Рестораны в Москве</h1>
         </div>
         <Restaurant restaurantData={restaurants} />
+        <Footer />
       </div>
     );
   }
