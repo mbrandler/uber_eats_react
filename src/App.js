@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Restaurant from './Restaurant.js';
+import Restaurant from './components/Restaurant.js';
 import './App.css';
 import mcd from './img/Stores/1-9.png';
 import DimSum from './img/Stores/1-8.png';
@@ -10,7 +10,7 @@ import cinnabon from './img/Stores/cinnabon.png';
 import Pizz from './img/Stores/PIZZELOVE.png';
 import Zю from './img/Stores/Zю.png';
 import bq from './img/Stores/bq.png';
-import Header from './Header.js'
+import Header from './components/Header.js'
 
 const restaurants = [
   { img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин' },
