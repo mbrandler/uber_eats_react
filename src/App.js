@@ -10,6 +10,7 @@ import cinnabon from './img/Stores/cinnabon.png';
 import Pizz from './img/Stores/PIZZELOVE.png';
 import Zю from './img/Stores/Zю.png';
 import bq from './img/Stores/bq.png';
+import Header from './Header.js'
 
 const restaurants = [
   { img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин' },
@@ -26,7 +27,10 @@ const restaurants = [
 class App extends Component {
   render() {
     return (
-      <Restaurant restaurantData={restaurants} />
+      <div>
+        <Header />
+        <Restaurant restaurantData={restaurants} />
+      </div>
     );
   }
 }
