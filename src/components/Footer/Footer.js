@@ -1,6 +1,8 @@
 import React from 'react'
 import classes from './Footer.module.css'
-import logo from '../img/logo.svg'
+import logo from '../../img/logo.svg'
+import Language from './Language.js'
+import Social from './Social.js'
 
 const Footer = () => {
 	return (
@@ -9,6 +11,8 @@ const Footer = () => {
 					<img className={classes.logo} src={logo} />
 
 					<hr />
+					<Language />
+					<Social />
 
 
 					<div>

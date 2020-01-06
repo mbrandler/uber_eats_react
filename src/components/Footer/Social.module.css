@@ -1,0 +1,13 @@
+.social {
+	width: 92px;
+	height: 60px;
+	font-size: 16px;
+	padding-bottom: 30px;
+	margin-top: 33px;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-between;
+}
+

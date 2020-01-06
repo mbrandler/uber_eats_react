@@ -15,6 +15,9 @@
 .logo {
 	padding-top: 7px;
 }
+.logo:hover {
+  cursor: pointer;
+}
 
 .sign {
 	margin: auto;

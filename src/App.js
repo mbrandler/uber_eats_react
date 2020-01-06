@@ -11,11 +11,11 @@ import Pizz from './img/Stores/PIZZELOVE.png';
 import Zю from './img/Stores/Zю.png';
 import bq from './img/Stores/bq.png';
 import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import Footer from './components/Footer/Footer.js'
 
 const restaurants = [
   { img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин' },
-  { img: DimSum, alt: 'DimSum & Co', name: 'DimSum & Co - ЦДМ', text: '₽ • Японская • Китайская • Азиатская', time: '40 - 50 минtext' },
+  { img: DimSum, alt: 'DimSum & Co', name: 'DimSum & Co - ЦДМ', text: '₽ • Японская • Китайская • Азиатская', time: '40 - 50 мин' },
   { img: ДвижОК, alt: 'ДвижОК', name: 'ДвижОК — Манежная', text: '₽ • Американская • Европейская', time: '35 - 45 мин' },
   { img: Ня, alt: 'Ня', name: 'НЯ - NHA', text: '₽₽ • Вьетнамская', time: '30 - 40 мин' },
   { img: дзы, alt: 'Точка Дзы', name: 'Точка Дзы — Цветной', text: '₽₽ • Вьетнамская', time: '40 - 50 мин' },
