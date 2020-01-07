@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
-import Restaurant from './components/Restaurant.js';
-import './App.css';
-import mcd from './img/Stores/1-9.png';
-import DimSum from './img/Stores/1-8.png';
-import ДвижОК from './img/Stores/1-7.png';
-import Ня from './img/Stores/1-6.png';
-import дзы from './img/Stores/дзы.png';
-import cinnabon from './img/Stores/cinnabon.png';
-import Pizz from './img/Stores/PIZZELOVE.png';
-import Zю from './img/Stores/Zю.png';
-import bq from './img/Stores/bq.png';
-import Header from './components/Header.js'
+import React, {Component} from 'react'
+import Restaurants from './components/Restaurants.js'
+import './App.css'
+import mcd from './img/Stores/1-9.png'
+import DimSum from './img/Stores/1-8.png'
+import ДвижОК from './img/Stores/1-7.png'
+import Ня from './img/Stores/1-6.png'
+import дзы from './img/Stores/дзы.png'
+import cinnabon from './img/Stores/cinnabon.png'
+import Pizz from './img/Stores/PIZZELOVE.png'
+import Zю from './img/Stores/Zю.png'
+import bq from './img/Stores/bq.png'
+import Navbar from './components/Navbar.js'
 import Footer from './components/Footer/Footer.js'
 
 const restaurants = [
@@ -29,12 +29,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Navbar />
         <div className='container'>
           <input type="text" class="search-form" placeholder="Поиск по ресторанам и кухням" />
           <h1>Рестораны в Москве</h1>
         </div>
-        <Restaurant restaurantData={restaurants} />
+        <Restaurants restaurantData={restaurants} />
         <Footer />
       </div>
     );

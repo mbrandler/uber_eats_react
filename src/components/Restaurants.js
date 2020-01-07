@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import classes from './Restaurant.module.css'
+import classes from './Restaurants.module.css'
 
 
 const Card = props => {

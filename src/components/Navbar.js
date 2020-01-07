@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import classes from './Navbar.module.css'
 import basket from '../img/Uber Eats/Restaurant/basket.svg'
 import logo from '../img/Uber Eats/Restaurant/logo.svg'
-import classes from './Header.module.css'
 
-const Header = () => {
+const Navbar = () => {
 	return (
 		<div className={classes.header}>
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-2 col-md-2 col-sm-2 col-xs-5">
 						<div className={classes.logo}>
-							<img src={logo} alt='logo'/>
+							<Link to="/"><img src={logo} alt='logo'/></Link>
 						
 						</div>
 					</div>
@@ -32,4 +33,4 @@ const Header = () => {
 		)
 }
 
-export default Header
+export default Navbar
