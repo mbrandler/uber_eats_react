@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import classes from './Restaurants.module.css'
+import { connect } from 'react-redux'
 
 
 const Card = props => {
@@ -7,9 +9,9 @@ const Card = props => {
 	const cards = props.restaurantData.map((card, index) => {
 
 		return (
-			<div className="col-lg-4 col-sm-6 col-xs-12" key={index}>
+			<Link to="/menu" className="col-lg-4 col-sm-6 col-xs-12" key={index}>
 				<div className={classes.card}>
-				
+			
    			<img src={card.img} className="card-img-top" alt={card.alt}/>
 	 	   		<div className="card-body">
 	    	 		<h5 className={classes.card_title}>{card.name}</h5>
@@ -17,23 +19,32 @@ const Card = props => {
 	     			<p className={classes.card_time}>{card.time}</p>
 	    		</div>
 	  		</div>
-			</div>
+			</Link>
 		)
 	})
 	return <div className='row'>{cards}</div>
 }
 
 
-
-class Restaurant extends Component {
+class Restaurants extends Component {
 
 	render () {
+		console.log("1", this.props);
 		return (
 					<div className='container'>
+						<input type="text" class="search-form" placeholder="Поиск по ресторанам и кухням" />
+          	<h1>Рестораны в Москве</h1>
 						<Card restaurantData={this.props.restaurantData} />
 					</div>
 			)
 	}
 }
 
-export default Restaurant
+
+const mapStateToProps = (state)=>{
+return {
+    restaurantData: state.restaurantData
+     }
+}
+
+export default connect(mapStateToProps) (Restaurants)

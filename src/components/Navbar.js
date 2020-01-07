@@ -11,8 +11,7 @@ const Navbar = () => {
 				<div className="row">
 					<div className="col-lg-2 col-md-2 col-sm-2 col-xs-5">
 						<div className={classes.logo}>
-							<Link to="/"><img src={logo} alt='logo'/></Link>
-						
+							<Link to="/"><img src={logo} alt='logo'></img></Link>
 						</div>
 					</div>
 
