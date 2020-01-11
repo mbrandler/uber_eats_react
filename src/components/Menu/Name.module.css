@@ -1,0 +1,21 @@
+.name {
+	width: 100%;
+	height: 370px;
+}
+
+.background {
+	z-index: 2;
+}
+
+.restaurant_card {
+	position: relative;
+	text-align: center;
+	width: 390px;
+	height: 200px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.heading {
+
+}

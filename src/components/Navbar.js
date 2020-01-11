@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Navbar.module.css'
-import basket from '../img/Uber Eats/Restaurant/basket.svg'
-import logo from '../img/Uber Eats/Restaurant/logo.svg'
+import basket from '../img/Uber Eats/Stores/basket.svg'
+import logo from '../img/Uber Eats/Stores/logo.svg'
 
 const Navbar = () => {
 	return (
@@ -16,15 +16,15 @@ const Navbar = () => {
 					</div>
 
 					<div className="col-lg-2 offset-lg-8 col-sm-3 offset-sm-7 col-xs-2 offset-xs-5">
-					<div className='row'>
-					<div className={classes.sign}>
-						<button className="btn sign-in btn-default">Войти</button>
-					</div>
-					<div className={classes.basket}>
-						<button className="btn btn-outline-light basket"><img src={basket} alt='basket'/>
-						</button>
-					</div>
-					</div>
+						<div className='row'>
+							<div className={classes.sign}>
+								<button className="btn sign-in btn-default">Войти</button>
+							</div>
+							<div className={classes.basket}>
+								<Link to="/basket"><button className="btn btn-outline-light basket"><img src={basket} alt='basket'/>
+								</button></Link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

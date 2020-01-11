@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './Social.module.css'
-import facebook from '../../img/Restaurant/ic/24/social/facebook.svg'
-import twitter from '../../img/Restaurant/ic/24/social/twitter.svg'
-import instagram from '../../img/Restaurant/ic/24/social/instagram.svg'
+import facebook from '../../img/Stores/ic/24/social/facebook.svg'
+import twitter from '../../img/Stores/ic/24/social/twitter.svg'
+import instagram from '../../img/Stores/ic/24/social/instagram.svg'
 
 
 

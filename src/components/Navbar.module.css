@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.sign {
+.sign-in {
 	margin: auto;
   font-size: 13px;
   font-weight: 500;
@@ -32,7 +32,7 @@
   background-color: #fff;
 }
 
-.sign:hover {
+.sign-in:hover {
 	background: #f2f2f2;
 	}
 
@@ -42,7 +42,7 @@
 	background-color: #fff;
 }
 
-.basket:hover {
+/*.basket:hover {
 	background: #f2f2f2;
-	}
+	}*/
 

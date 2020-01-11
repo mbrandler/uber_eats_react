@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Language.module.css'
 import world from '../../img/world.svg'
-import arrow from '../../img/Restaurant/if_icon-ios7-arrow-back_211686.svg'
+import arrow from '../../img/Stores/if_icon-ios7-arrow-back_211686.svg'
 
 
 const Language = () => {

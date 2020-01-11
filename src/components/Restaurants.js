@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Restaurants.module.css'
 import { connect } from 'react-redux'
+import Menu from './Menu/Menu.js'
 
 
 const Card = props => {
