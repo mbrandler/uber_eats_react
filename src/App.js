@@ -8,15 +8,11 @@ import Menu from './components/Menu/Menu.js'
 import Basket from './components/Basket/Basket.js'
 
 
-
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Navbar />
-
-        {/*<Menu />*/}
-        
+        <Navbar />        
         <Switch>
           <Route exact path="/" component={Restaurants}/>
           <Route exact path="/menu" component={Menu}/>

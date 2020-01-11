@@ -27,35 +27,30 @@ class Menu extends Component {
     // {img: pushkin, text: 'Zю кафе'},
     // {img: pushkin, text: 'Bar BQ'},
   
+    console.log('foobar' , this.props )
 
-    const menu =  [
-        {img: seld, name: 'Сельдь на бородинском хлебе', price: '240 ₽', alt: 'Селёдка'},
-        {img: gribi, name: 'Грибы маринованные', price: '300 ₽', alt: 'Грибы'},
-        {img: semga, name: 'Малосольная семга', price: '390 ₽', alt: 'Сёмга'},
-        {img: solenia, name: 'Соленья ассорти', price: '320 ₽', alt: 'Соленья'},
-        {img: salo, name: 'Сало домашнее с горчицей', price: '320 ₽', alt: 'Сало'},
-        {img: yazik, name: 'Язык говяжий с хреном', price: '350 ₽', alt: 'Язык говяжий'},
-      ]
+    const menu = this.props.menu
 
-    const restaurant = {img: pushkin, text: 'Трактир «Пушкин»', menu}
-
+    // const restaurant = {img: pushkin, text: 'Трактир «Пушкин»'}
+    const restaurant = this.props.restaurant
     return (
         <div className='container'>
           <div className={classes.menu}>
             <Name nameData={restaurant}/>
             <h3>Закуски</h3>
-            <Snacks snackData={restaurant.menu}/>
+            <Snacks snackData={menu}/>
           </div>
         </div>
     );
   }
 }
 
-const mapStateToProps1 = (state)=>{
+const mapStateToProps = (state)=>{
 return {
-    snackData: state.snackData
-     }
+    menu: state.snacksReducer.snackData[10],
+    restaurant: state.restaurantReducer.restaurantData[9]
+    }
 }
 
-export default connect(mapStateToProps1) (Menu)
+export default connect(mapStateToProps) (Menu)
 // export default Menu

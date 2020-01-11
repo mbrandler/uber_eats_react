@@ -1,9 +1,6 @@
 import React from 'react'
-
 import { connect } from 'react-redux'
 import classes from './Snacks.module.css'
-
-
 
 
 const Snacks = props => {

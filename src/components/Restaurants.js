@@ -44,7 +44,7 @@ class Restaurants extends Component {
 
 const mapStateToProps = (state)=>{
 return {
-    restaurantData: state.restaurantData
+    restaurantData: state.restaurantReducer.restaurantData
      }
 }
 
