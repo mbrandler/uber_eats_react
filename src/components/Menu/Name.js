@@ -8,13 +8,7 @@ const Name = () => {
 				<img className={classes.background} src={pushkin} alt="restaurant's food" />
 				<div className={classes.restaurant_card}>
 					<h1 className={classes.heading}>Трактир «Пушкин»</h1>
-
-					
 				</div>
-
-			
-
-
 			</div>
 		)
 }

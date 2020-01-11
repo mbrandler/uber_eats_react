@@ -4,7 +4,8 @@
 }
 
 .background {
-	z-index: 2;
+	position: absolute;
+	z-index: 0;
 }
 
 .restaurant_card {
