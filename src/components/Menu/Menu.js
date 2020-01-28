@@ -4,10 +4,21 @@ import Name from './Name.js'
 import Snacks from './Snacks.js'
 import { connect } from 'react-redux'
 
+import seld from '../../img/Uber Eats/Restaurant/seld.png'
+import gribi from '../../img/Uber Eats/Restaurant/gribi.png'
+import semga from '../../img/Uber Eats/Restaurant/semga.png'
+import solenia from '../../img/Uber Eats/Restaurant/solenia.png'
+import salo from '../../img/Uber Eats/Restaurant/salo.png'
+import yazik from '../../img/Uber Eats/Restaurant/yazik.png'
+
+import pushkin from '../../img/Uber Eats/Restaurant/pushkin.png'
+
 class Menu extends Component {
 
   render() {
+
     console.log('menu',  this.props)
+
     
     // {img: pushkin, text: 'Макдоналдс'},
     // {img: pushkin, text: 'DimSum & Co'},
@@ -18,27 +29,31 @@ class Menu extends Component {
     // {img: pushkin, text: 'Zю кафе'},
     // {img: pushkin, text: 'Bar BQ'},
   
-    const menu = this.props.menu
-    console.log('menu',  menu)
+    console.log('foobar' , this.props )
 
+    const menu = this.props.menu
+
+    // const restaurant = {img: pushkin, text: 'Трактир «Пушкин»'}
     const restaurant = this.props.restaurant
     return (
-        <div className={classes.menu}>
-          <Name />
-          <h3>Закуски</h3>
-          <Snacks />
+        <div className='container'>
+          <div className={classes.menu}>
+            <Name nameData={restaurant}/>
+            <h3>Закуски</h3>
+            <Snacks snackData={menu}/>
+          </div>
         </div>
-        
-  
     );
   }
 }
 
 const mapStateToProps = (state)=>{
 return {
-    snackData: state.snackData
-     }
+    menu: state.snacksReducer.snackData[10],
+    restaurant: state.restaurantReducer.restaurantData[9]
+    }
 }
 
 export default connect(mapStateToProps) (Menu)
 // export default Menu
+

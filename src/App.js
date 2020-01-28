@@ -9,15 +9,11 @@ import Basket from './components/Basket/Basket.js'
 import FAQ from './components/FAQ.js'
 
 
-
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Navbar />
-
-        {/*<Menu />*/}
-        
+        <Navbar />        
         <Switch>
           <Route exact path="/" component={Restaurants}/>
           <Route exact path="/menu" component={Menu}/>

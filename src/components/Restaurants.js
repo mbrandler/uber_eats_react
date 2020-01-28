@@ -43,8 +43,8 @@ class Restaurants extends Component {
 
 const mapStateToProps = (state)=>{
 return {
-  restaurantData: state.restaurantReducer.restaurantData
-   }
+    restaurantData: state.restaurantReducer.restaurantData
+     }
 }
 
 export default connect(mapStateToProps) (Restaurants)
