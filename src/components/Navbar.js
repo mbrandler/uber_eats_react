@@ -17,11 +17,11 @@ const Navbar = () => {
 
 					<div className="col-lg-2 offset-lg-8 col-sm-3 offset-sm-7 col-xs-2 offset-xs-5">
 						<div className='row'>
-							<div className={classes.sign}>
-								<button className="btn sign-in btn-default">Войти</button>
+							<div className={classes.sign_in}>
+								<button className="btn btn-default">Войти</button>
 							</div>
 							<div className={classes.basket}>
-								<Link to="/basket"><button className="btn btn-outline-light basket"><img src={basket} alt='basket'/>
+								<Link to="/basket"><button className="btn btn-outline-light"><img src={basket} alt='basket'/>
 								</button></Link>
 							</div>
 						</div>

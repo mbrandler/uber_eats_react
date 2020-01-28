@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.js'
 import Footer from './components/Footer/Footer.js'
 import Menu from './components/Menu/Menu.js'
 import Basket from './components/Basket/Basket.js'
+import FAQ from './components/FAQ.js'
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route exact path="/" component={Restaurants}/>
           <Route exact path="/menu" component={Menu}/>
           <Route exact parh="/basket" component={Basket}/>
+          <Route exact path="/faq" component={FAQ}/>
         </Switch>
         <Footer />
       </BrowserRouter>

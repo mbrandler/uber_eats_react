@@ -30,13 +30,12 @@ const Card = props => {
 class Restaurants extends Component {
 
 	render () {
-		console.log("1", this.props);
 		return (
-					<div className='container'>
-						<input type="text" class="search-form" placeholder="Поиск по ресторанам и кухням" />
-          	<h1>Рестораны в Москве</h1>
-						<Card restaurantData={this.props.restaurantData} />
-					</div>
+			<div className='container'>
+				<input type="text" className="search-form" placeholder="Поиск по ресторанам и кухням" />
+      	<h1>Рестораны в Москве</h1>
+				<Card restaurantData={this.props.restaurantData} />
+			</div>
 			)
 	}
 }
@@ -44,8 +43,8 @@ class Restaurants extends Component {
 
 const mapStateToProps = (state)=>{
 return {
-    restaurantData: state.restaurantData
-     }
+  restaurantData: state.restaurantReducer.restaurantData
+   }
 }
 
 export default connect(mapStateToProps) (Restaurants)

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import classes from './Footer.module.css'
 import logo from '../../img/logo.svg'
 import Language from './Language.js'
@@ -31,7 +32,7 @@ const Footer = () => {
 							<p>Все города</p>
 							<p>Цены</p>
 							<p>Помощь</p>
-							<p>FAQs</p>
+							<p><Link to="faq">FAQs</Link></p>
 						</div>
 					</div>
 
