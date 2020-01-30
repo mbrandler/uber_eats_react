@@ -36,13 +36,16 @@ class Menu extends Component {
     // const restaurant = {img: pushkin, text: 'Трактир «Пушкин»'}
     const restaurant = this.props.restaurant
     return (
-        <div className='container'>
-          <div className={classes.menu}>
+        <div>
             <Name nameData={restaurant}/>
-            <h3>Закуски</h3>
-            <Snacks snackData={menu}/>
-          </div>
+            <div className='container'>
+                <div className={classes.menu}>
+                    <h3>Закуски</h3>
+                    <Snacks snackData={menu}/>
+                </div>
+            </div>
         </div>
+      
     );
   }
 }
