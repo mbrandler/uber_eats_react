@@ -11,9 +11,10 @@ const Name = props => {
 				</div>
 				<div className='container'>
 					<div className={classes.restaurant_card}>
-					<h1>{props.nameData.name}</h1>
-					<p>{props.nameData.text}</p>
-					<span className={classes.time}>{props.nameData.time}</span>
+					<h1 className={classes.rest_name}>{props.nameData.name}</h1>
+					<p className={classes.info}>{props.nameData.text}
+						<span className={classes.time}>{props.nameData.time}</span>
+					</p>
 					</div>
 				</div>
 			</div>

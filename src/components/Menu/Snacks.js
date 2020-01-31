@@ -10,7 +10,7 @@ const Snacks = props => {
 
 		return (
 			<div className='col-lg-6'>
-				<div className="card mb-3" key={index}>
+				<div className="card mb-3" key={snack.id}>
 				  <div className="row no-gutters">
 				    
 				    <div className="col-md-8">

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Restaurants.module.css'
 import { connect } from 'react-redux'
-import Menu from './Menu/Menu.js'
+import Menu from '../Menu/Menu.js'
 
 
 const Card = props => {
@@ -33,7 +33,7 @@ class Restaurants extends Component {
 		return (
 			<div className='container'>
 				<input type="text" className="search-form" placeholder="Поиск по ресторанам и кухням" />
-      	<h1>Рестораны в Москве</h1>
+      	<h1 className={classes.rest}>Рестораны в Москве</h1>
 				<Card restaurantData={this.props.restaurantData} />
 			</div>
 			)

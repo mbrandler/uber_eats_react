@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
-import Restaurants from './components/Restaurants.js'
 import './App.css'
+import Restaurants from './components/Restaurants/Restaurants.js'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Navbar from './components/Navbar.js'
+import Navbar from './components/Navbar/Navbar.js'
 import Footer from './components/Footer/Footer.js'
 import Menu from './components/Menu/Menu.js'
 import Basket from './components/Basket/Basket.js'
-import FAQ from './components/FAQ.js'
+import FAQ from './components/FAQ/FAQ.js'
 
 
 class App extends Component {

@@ -29,8 +29,6 @@ class Menu extends Component {
     // {img: pushkin, text: 'Zю кафе'},
     // {img: pushkin, text: 'Bar BQ'},
   
-    console.log('foobar' , this.props )
-
     const menu = this.props.menu
 
     // const restaurant = {img: pushkin, text: 'Трактир «Пушкин»'}
@@ -38,8 +36,18 @@ class Menu extends Component {
     return (
         <div>
             <Name nameData={restaurant}/>
+            <div className={classes.filter}>
+                <div className='container'>
+                    <a href="#">Закуски</a>
+                    <a href="#">Салаты</a>
+                    <a href="#">Супы</a>
+                    <a href="#">Горячие блюда</a>
+                    <a href="#">Гарниры</a>
+                    <a href="#">Десерты</a>
+                </div>
+            </div>
             <div className='container'>
-                <div className={classes.menu}>
+                <div>
                     <h3>Закуски</h3>
                     <Snacks snackData={menu}/>
                 </div>
@@ -58,5 +66,3 @@ return {
 }
 
 export default connect(mapStateToProps) (Menu)
-// export default Menu
-

@@ -16,7 +16,6 @@
 	display: inline-block;
 	position: relative;
 	margin-top: 80px;
-	text-align: center;
 	width: 390px;
 	height: 200px;
 	background-color: #fff;
@@ -24,9 +23,24 @@
 }
 
 .time {
-	width: 200px;
-	height: 70px;
+	width: 100px;
+	height: 32px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 13px;
 	background-color: #262626;
 	border-radius: 16px;
 	color: #FFFFFF;
+}
+
+.rest_name {
+	font-size: 36px;
+	margin-top: 38px;
+	margin-left: 38px;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin: 62px 38px;
 }
