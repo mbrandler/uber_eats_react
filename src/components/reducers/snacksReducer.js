@@ -15,10 +15,10 @@ const snacks = {
 			{id:3 ,img: solenia, name: 'Соленья ассорти', price: 320, alt: 'Соленья'},
 			{id:4 ,img: salo, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало'},
 			{id:5 ,img: yazik, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий'},
-		],
+		]
+	}	,
 	addedSnacks: [],
 	total: 0
-	}
 }
 
 const snacksReducer= (state = snacks,action)=>{
