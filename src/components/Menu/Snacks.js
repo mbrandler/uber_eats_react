@@ -1,23 +1,28 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './Snacks.module.css'
-
+import {addToCart} from '../actions/cartActions.js'
 
 const Snacks = props => {
+	console.log('snacks', props)
 
-	console.log('snacks',props)
-	const snacks = props.snackData.map((snack, index) => {
+	const handleClick = (id) => {
+		props.addToCart(id);
+		console.log('afterCleck', props)
+	}
+	const snacks = props.snackData.map((snack) => {
 
 		return (
-			<div className='col-lg-6'>
-				<div className="card mb-3" key={snack.id}>
+			<div className='col-lg-6 col-md-12 col-sm-12' key={snack.id}>
+				<div className="card mb-3">
 				  <div className="row no-gutters">
 				    
 				    <div className="col-md-8">
 				      <div className="card-body">
-				        <h5 className="card-title">{snack.name}</h5>
-				        <p className="card-text">{snack.text}</p>
-				        <p className="card-text">{snack.price}</p>
+				        <h5 className={classes.title}>{snack.name}</h5>
+				        {/*<p className="card-text">{snack.text}</p>*/}
+				        <p className={classes.price}>{snack.price}</p>
+				        <button onClick={() => {handleClick(snack.id)}}>Заказать</button> 
 				      </div>
 				    </div>
 
@@ -34,13 +39,18 @@ const Snacks = props => {
 		return <div className='row'>{snacks}</div>
 }
 
-// const mapStateToProps1 = (state)=>{
-// return {
-//     snackData: state.snackData
-//      }
-// }
+const mapStateToProps = (state)=>{
+	return {
+	    menu: state.snacksReducer,
+	    }
+}
 
-// export default connect(mapStateToProps1) (Snacks)
-export default Snacks
+const mapDispatchToProps= (dispatch)=>{
+	return{
+	   addToCart: (id)=>{dispatch(addToCart(id))}
+	     }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (Snacks)
 
 

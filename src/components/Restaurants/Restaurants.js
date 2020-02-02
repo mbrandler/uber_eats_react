@@ -2,15 +2,13 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Restaurants.module.css'
 import { connect } from 'react-redux'
-import Menu from '../Menu/Menu.js'
-
 
 const Card = props => {
 
-	const cards = props.restaurantData.map((card, index) => {
+	const cards = props.restaurantData.map((card) => {
 
 		return (
-			<Link to="/menu" className="col-lg-4 col-sm-6 col-xs-12" key={index}>
+			<Link to="/menu" className="col-lg-4 col-sm-6 col-xs-12" key={card.id}>
 				<div className={classes.card}>
 			
    			<img src={card.img} className="card-img-top" alt={card.alt}/>
