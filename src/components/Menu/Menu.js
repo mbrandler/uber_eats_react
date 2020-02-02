@@ -40,8 +40,8 @@ class Menu extends Component {
 
 const mapStateToProps = (state)=>{
 return {
-    menu: state.snacksReducer.snackData['pushkin'],
-    restaurant: state.restaurantReducer.restaurantData[9]  // временно захардкодила только "пушкин"
+    menu: state.snacksReducer.snackData.pushkin,
+    restaurant: state.restaurantReducer.restaurantData.find(item => item.id === 'pushkin')  // временно захардкодила только "пушкин"
     }
 }
 

@@ -4,7 +4,7 @@ import semga from '../../img/Uber Eats/Restaurant/semga.png'
 import solenia from '../../img/Uber Eats/Restaurant/solenia.png'
 import salo from '../../img/Uber Eats/Restaurant/salo.png'
 import yazik from '../../img/Uber Eats/Restaurant/yazik.png'
-import { ADD_TO_CART } from '../actions/action-types/cart-actions.js'
+import { ADD_TO_CART, SUB_FROM_CART, REMOVE_ITEM } from '../actions/action-types/cart-actions.js'
 
 const snacks = {
 	snackData: {
@@ -23,36 +23,64 @@ const snacks = {
 
 const snacksReducer= (state = snacks,action)=>{
     
-    if(action.type === ADD_TO_CART){	
-    		  console.log('reducer', state)
-          let addedSnack = state.snackData['pushkin'].find(snack=> snack.id === action.id)  // временно захардкодила меню только одного ресторана
-          console.log('addedSnack', addedSnack)
-
-          let existed_snack = state.addedSnacks.find(snack=> action.id === snack.id)
-          if(existed_snack)
-          {
-            addedSnack.quantity += 1 
-             return{
-                ...state,
-                 total: state.total + addedSnack.price 
-                  }
-        	}
-          else{
-            addedSnack.quantity = 1;
-
-            let newTotal = state.total + addedSnack.price 
-            
-            return{
-                ...state,
-                addedSnacks: [...state.addedSnacks, addedSnack],
-                total : newTotal
-          }
-            
-        }
-    }
+  if(action.type === ADD_TO_CART){	
+    let addedSnack = state.snackData['pushkin'].find(snack => snack.id === action.id)  // временно захардкодила меню только одного ресторана
+    let existed_snack = state.addedSnacks.find(snack => action.id === snack.id)
+    if(existed_snack)
+    {
+      addedSnack.quantity += 1 
+       return{
+          ...state,
+          total: state.total + addedSnack.price 
+            }
+  	}
     else{
-        return state
+      addedSnack.quantity = 1;
+
+      let newTotal = state.total + addedSnack.price 
+      
+      return{
+          ...state,
+          addedSnacks: [...state.addedSnacks, addedSnack],
+          total : newTotal
+      }
     }
+  }
+  
+  if(action.type === SUB_FROM_CART) {
+  	let addedSnack = state.snackData['pushkin'].find(snack => snack.id === action.id) 
+    if(addedSnack.quantity === 1){
+        let new_snacks = state.addedSnacks.filter(snack => snack.id !== action.id)
+        let newTotal = state.total - addedSnack.price
+        return{
+            ...state,
+            addedSnacks: new_snacks,
+            total: newTotal
+        }
+     }
+    else {
+      addedSnack.quantity -= 1
+      let newTotal = state.total - addedSnack.price
+      return{
+          ...state,
+          total: newTotal
+      }
+  	}
+		}
+
+	if(action.type === REMOVE_ITEM) {
+	  let itemToRemove = state.addedSnacks.find(snack=> action.id === snack.id)
+    let new_items = state.addedItems.filter(snack=> action.id !== snack.id)
+    let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity )
+    return{
+      ...state,
+      addedSnacks: new_items,
+      total: newTotal
+    } 
+	}
+  else{
+      return state
+  }
 
 }
 export default snacksReducer;

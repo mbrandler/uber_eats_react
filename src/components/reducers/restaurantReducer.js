@@ -20,7 +20,7 @@ const restaurants = {
 	  { id: 6, img: Pizz, alt: 'PIZZELOVE', name: 'PIZZELOVE', text: '₽₽ • Пицца', time: '15 - 25 мин' },
 	  { id: 7, img: Zю, alt: 'Zю кафе', name: 'Zю кафе — Тверская', text: '₽₽ • Японская', time: '25 - 35 мин' },
 	  { id: 8, img: bq, alt: 'Bar BQ', name: 'Bar BQ Cafe — Манежная', text: '₽₽₽ • Европейская', time: '30 - 40 мин' },
-	  { id: 9, img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
+	  { id: 'pushkin', img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
 	],
 }
 

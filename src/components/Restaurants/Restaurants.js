@@ -6,9 +6,8 @@ import { connect } from 'react-redux'
 const Card = props => {
 
 	const cards = props.restaurantData.map((card) => {
-
 		return (
-			<Link to="/menu" className="col-lg-4 col-sm-6 col-xs-12" key={card.id}>
+			<Link to={"/menu/" + card.id} className="col-lg-4 col-sm-6 col-xs-12" key={card.id}>
 				<div className={classes.card}>
 			
    			<img src={card.img} className="card-img-top" alt={card.alt}/>
