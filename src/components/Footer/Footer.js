@@ -9,6 +9,10 @@ import AppStore from '../../img/Stores/download.svg'
 import arrow from '../../img/Stores/arrow.svg'
 
 const Footer = () => {
+	const topFunction = () => {
+		document.body.scrollTop = 0;  //  для сафари
+		document.documentElement.scrollTo({top: 0, behavior: "smooth"});  //  для хрома, фаерфокса и эксплорера
+	}
 	return (
 			<div className={classes.footer}>
 				<div className='container'>
@@ -51,7 +55,7 @@ const Footer = () => {
 							<p>© 2017 Uber Technologies Inc.</p>
 							<p>Обработка персональных данных</p>
 							<p>Пользовательское соглашение</p>
-							<button className={classes.topbutton}>
+							<button className={classes.topbutton} onClick={() =>{topFunction()}}>
 								<img src={arrow} alt='arrow' />
 							</button>
 						</div>
