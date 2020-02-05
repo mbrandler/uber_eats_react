@@ -11,9 +11,9 @@ const Basket = props => {
 	    props.addToCart(id); 
 	 }
 
-	// const handleRemove = (id)=>{
- //      props.removeItem(id);
- //  }
+	const handleRemove = (id)=>{
+      props.removeItem(id);
+  }
    
   const handleSubtractQuantity = (id)=>{
       props.subFromCart(id);
@@ -34,13 +34,18 @@ const Basket = props => {
 					      <div className="card-body">
 					        <h5 className="card-title">{snack.name}</h5>
 									<p className={classes.price}>{snack.price}</p>
-									<img src={plus} alt="" width="32" height="32" title="plus"
+
+									<div className={classes.quantity}>
+										<img src={plus} alt="" width="32" height="32" title="plus"
 										onClick={() => {handleClick(snack.id)}}
 									/>
-									<p>Количество: {snack.quantity}</p>
+									<p> {snack.quantity}</p>
 									<img src={minus} alt="" width="32" height="32" title="minus"
 										onClick={() => {handleSubtractQuantity(snack.id)}}
 									/>
+							{/*		<button onClick={() => {handleRemove(snack.id)}}>Удалить</button>*/}
+									</div>
+									
 					      </div>
 					    </div>
 
@@ -57,8 +62,12 @@ const Basket = props => {
     <div className="container">
         <div className={classes.basket2}>
 					<h1>Ваш заказ</h1>
-					<ul className="collection">
-              {addedSnacks}
+					<ul className={classes.added_snacks}>
+						<div className='row'>
+							<div className='offset-lg-3 col-lg-6 offset-lg-3 col-md-12 col-sm-12'>
+	              {addedSnacks}  
+							</div>
+						</div>
           </ul>
 					<h2>Итого: {props.total} руб.</h2>
 			</div>

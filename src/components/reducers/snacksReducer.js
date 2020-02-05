@@ -8,6 +8,9 @@ import { ADD_TO_CART, SUB_FROM_CART, REMOVE_ITEM } from '../actions/action-types
 
 const snacks = {
 	snackData: {
+    mcdonalds: [
+      {id:6 ,img: seld, name: 'Сельдь бургер с салом и зеленью березы', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
+    ],
 		pushkin: [
 			{id:0 ,img: seld, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка'},
 			{id:1 ,img: gribi, name: 'Грибы маринованные', price: 300, alt: 'Грибы'},
@@ -16,7 +19,7 @@ const snacks = {
 			{id:4 ,img: salo, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало'},
 			{id:5 ,img: yazik, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий'},
 		]
-	}	,
+	},
 	addedSnacks: [],
 	total: 0
 }

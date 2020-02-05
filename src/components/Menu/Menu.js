@@ -5,27 +5,35 @@ import Snacks from './Snacks.js'
 import { connect } from 'react-redux'
 
 class Menu extends Component {
-
   render() {
 
-    console.log('menu',  this.props)
-  
-    const menu = this.props.menu
+    
 
-    const restaurant = this.props.restaurant
+    const restaurantID = this.props.location.pathname.substr(6)
+    const menu = this.props.menu[restaurantID]
+
+    console.log('menu',  this.props.menu)
+    const restaurant = this.props.restaurant.find(item => item.id === restaurantID)
     return (
         <div>
             <Name nameData={restaurant}/>
-            <div className={classes.filter}>
-                <div className='container'>
-                    <a href="#">Закуски</a>
-                    <a href="#">Салаты</a>
-                    <a href="#">Супы</a>
-                    <a href="#">Горячие блюда</a>
-                    <a href="#">Гарниры</a>
-                    <a href="#">Десерты</a>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-lg-8 col-md-10'>
+                        <div className={classes.filter}>
+                            <a href="#">Закуски</a>
+                            <a href="#">Салаты</a>
+                            <a href="#">Супы</a>
+                            <a href="#">Горячие блюда</a>
+                            <a href="#">Гарниры</a>
+                            <a href="#">Десерты</a>
+                        </div>                       
+                    </div>
                 </div>
             </div>
+
+            <hr className={classes.menu_line}/>
+
             <div className='container'>
                 <div>
                     <h1 className={classes.snacks}>Закуски</h1>
@@ -40,8 +48,8 @@ class Menu extends Component {
 
 const mapStateToProps = (state)=>{
 return {
-    menu: state.snacksReducer.snackData.pushkin,
-    restaurant: state.restaurantReducer.restaurantData.find(item => item.id === 'pushkin')  // временно захардкодила только "пушкин"
+    menu: state.snacksReducer.snackData,
+    restaurant: state.restaurantReducer.restaurantData  // временно захардкодила только "пушкин"
     }
 }
 

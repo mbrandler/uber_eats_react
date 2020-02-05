@@ -1,4 +1,5 @@
 import mcd from '../../img/Stores/1-9.png'
+import mcd_bg from '../../img/Uber Eats/Restaurant/mcd_bg.png'
 import DimSum from '../../img/Stores/1-8.png'
 import ДвижОК from '../../img/Stores/1-7.png'
 import Ня from '../../img/Stores/1-6.png'
@@ -7,11 +8,12 @@ import cinnabon from '../../img/Stores/cinnabon.png'
 import Pizz from '../../img/Stores/PIZZELOVE.png'
 import Zю from '../../img/Stores/Zю.png'
 import bq from '../../img/Stores/bq.png'
-import pushkin from '../../img/Uber Eats/Restaurant/pushkin.png'
+import pushkin from '../../img/Uber Eats/Restaurant/pushkin_2.png'
+import pushkin_bg from '../../img/Uber Eats/Restaurant/pushkin.png'
 
 const restaurants = {
 	restaurantData: [
-	  { id: 0, img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин'},
+	  { id: 'mcdonalds', background: mcd_bg, img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин'},
 	  { id: 1, img: DimSum, alt: 'DimSum & Co', name: 'DimSum & Co - ЦДМ', text: '₽ • Японская • Китайская • Азиатская', time: '40 - 50 мин' },
 	  { id: 2, img: ДвижОК, alt: 'ДвижОК', name: 'ДвижОК — Манежная', text: '₽ • Американская • Европейская', time: '35 - 45 мин' },
 	  { id: 3, img: Ня, alt: 'Ня', name: 'НЯ - NHA', text: '₽₽ • Вьетнамская', time: '30 - 40 мин' },
@@ -20,7 +22,7 @@ const restaurants = {
 	  { id: 6, img: Pizz, alt: 'PIZZELOVE', name: 'PIZZELOVE', text: '₽₽ • Пицца', time: '15 - 25 мин' },
 	  { id: 7, img: Zю, alt: 'Zю кафе', name: 'Zю кафе — Тверская', text: '₽₽ • Японская', time: '25 - 35 мин' },
 	  { id: 8, img: bq, alt: 'Bar BQ', name: 'Bar BQ Cafe — Манежная', text: '₽₽₽ • Европейская', time: '30 - 40 мин' },
-	  { id: 'pushkin', img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
+	  { id: 'pushkin', background: pushkin_bg, img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
 	],
 }
 
