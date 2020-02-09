@@ -7,8 +7,6 @@ import { connect } from 'react-redux'
 class Menu extends Component {
   render() {
 
-    
-
     const restaurantID = this.props.location.pathname.substr(6)
     const menu = this.props.menu[restaurantID]
 

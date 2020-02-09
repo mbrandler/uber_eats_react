@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import {addToCart, subFromCart, removeItem} from '../actions/cartActions.js'
 import plus from '../../img/plus.svg'
 import minus from '../../img/dash.svg'
+import delete_btn from '../../img/x.svg'
 
 const Basket = props => {
 	const handleClick = (id) => {
@@ -23,34 +24,42 @@ const Basket = props => {
     (  
       props.snacks.map(snack => {
         return(
-					<li className="card mb-3" key={snack.id}>
-					  <div className="row no-gutters">
+        	<div>
+        		<div className='row' key={snack.id}>
+        		
+	    				<div className='col-lg-1'>
+	    					<img src={delete_btn} onClick={() => {handleRemove(snack.id)}}/>
+	    				</div>
+						      	
+						  <div className='col-lg-2'>
+						  	<div className={classes.image}>
+						  		<img src={snack.img}/>
+						  	</div>
+						  </div>
 
-					    <div className="col-md-4">
-					      <img src={snack.img} className="card-img" alt={snack.alt} />
-					    </div>
+						  <div className='col-lg-6'>
+						  	{snack.name}
+						  </div>
 
-					    <div className="col-md-8">
-					      <div className="card-body">
-					        <h5 className="card-title">{snack.name}</h5>
-									<p className={classes.price}>{snack.price}</p>
-
-									<div className={classes.quantity}>
-										<img src={plus} alt="" width="32" height="32" title="plus"
+						  <div className='col-lg-2'>
+						  	<img src={plus} alt="" width="32" height="32" title="plus"
 										onClick={() => {handleClick(snack.id)}}
-									/>
-									<p> {snack.quantity}</p>
-									<img src={minus} alt="" width="32" height="32" title="minus"
-										onClick={() => {handleSubtractQuantity(snack.id)}}
-									/>
-							{/*		<button onClick={() => {handleRemove(snack.id)}}>Удалить</button>*/}
-									</div>
-									
-					      </div>
-					    </div>
+										/>
+										{snack.quantity}
+										<img src={minus} alt="" width="32" height="32" title="minus"
+											onClick={() => {handleSubtractQuantity(snack.id)}}
+										/>
+						  </div>
 
-					  </div>
-					</li>
+						  <div className='col-lg-1'>
+						  	{snack.price * snack.quantity} руб.
+						  </div>
+	        		
+						</div>
+						<hr className={classes.blackHr}/>
+
+        	</div>
+        	
 				)
       })
     ):
@@ -62,13 +71,7 @@ const Basket = props => {
     <div className="container">
         <div className={classes.basket2}>
 					<h1>Ваш заказ</h1>
-					<ul className={classes.added_snacks}>
-						<div className='row'>
-							<div className='offset-lg-3 col-lg-6 offset-lg-3 col-md-12 col-sm-12'>
-	              {addedSnacks}  
-							</div>
-						</div>
-          </ul>
+						{addedSnacks}  	          
 					<h2>Итого: {props.total} руб.</h2>
 			</div>
     </div>

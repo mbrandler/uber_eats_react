@@ -26,8 +26,8 @@ hr {
 .bottom {
 	display: flex;
 	justify-content: space-between;
-	font-size: 11px;
-	line-height: 13px;
+	font-size: 0.688em;
+	line-height: 0.813em;
 }
 
 .topbutton {

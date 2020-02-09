@@ -1,27 +1,28 @@
-import seld from '../../img/Uber Eats/Restaurant/seld.png'
-import gribi from '../../img/Uber Eats/Restaurant/gribi.png'
-import semga from '../../img/Uber Eats/Restaurant/semga.png'
-import solenia from '../../img/Uber Eats/Restaurant/solenia.png'
-import salo from '../../img/Uber Eats/Restaurant/salo.png'
-import yazik from '../../img/Uber Eats/Restaurant/yazik.png'
+import item_1 from '../../img/Uber Eats/Restaurant/seld.png'
+import item_2 from '../../img/Uber Eats/Restaurant/gribi.png'
+import item_3 from '../../img/Uber Eats/Restaurant/semga.png'
+import item_4 from '../../img/Uber Eats/Restaurant/solenia.png'
+import item_5 from '../../img/Uber Eats/Restaurant/salo.png'
+import item_6 from '../../img/Uber Eats/Restaurant/yazik.png'
 import { ADD_TO_CART, SUB_FROM_CART, REMOVE_ITEM } from '../actions/action-types/cart-actions.js'
 
 const snacks = {
 	snackData: {
     mcdonalds: [
-      {id:6 ,img: seld, name: 'Сельдь бургер с салом и зеленью березы', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
+      {id:6 ,img: item_1, name: 'Сельдь бургер с салом и зеленью березы', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
     ],
 		pushkin: [
-			{id:0 ,img: seld, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка'},
-			{id:1 ,img: gribi, name: 'Грибы маринованные', price: 300, alt: 'Грибы'},
-			{id:2 ,img: semga, name: 'Малосольная семга', price: 390, alt: 'Сёмга'},
-			{id:3 ,img: solenia, name: 'Соленья ассорти', price: 320, alt: 'Соленья'},
-			{id:4 ,img: salo, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало'},
-			{id:5 ,img: yazik, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий'},
+			{id:0 ,img: item_1, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка'},
+			{id:1 ,img: item_2, name: 'Грибы маринованные', price: 300, alt: 'Грибы'},
+			{id:2 ,img: item_3, name: 'Малосольная семга', price: 390, alt: 'Сёмга'},
+			{id:3 ,img: item_4, name: 'Соленья ассорти', price: 320, alt: 'Соленья'},
+			{id:4 ,img: item_5, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало'},
+			{id:5 ,img: item_6, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий'},
 		]
 	},
-	addedSnacks: [],
-	total: 0
+	addedSnacks: [{id:1 ,img: item_2, name: 'Грибы маринованные', price: 300, alt: 'Грибы', quantity: 2},
+                {id:5 ,img: item_6, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий' , quantity: 1}],
+	total: 950
 }
 
 const snacksReducer= (state = snacks,action)=>{
@@ -69,11 +70,11 @@ const snacksReducer= (state = snacks,action)=>{
           total: newTotal
       }
   	}
-		}
+	}
 
 	if(action.type === REMOVE_ITEM) {
-	  let itemToRemove = state.addedSnacks.find(snack=> action.id === snack.id)
-    let new_items = state.addedItems.filter(snack=> action.id !== snack.id)
+	  let itemToRemove = state.snackData['pushkin'].find(snack=> action.id === snack.id)
+    let new_items = state.addedSnacks.filter(snack=> action.id !== snack.id)
     let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity )
     return{
       ...state,

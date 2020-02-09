@@ -1,9 +1,9 @@
 .rest {
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: normal;
   margin-top: 56px;
   margin-bottom: 16px;
-  line-height: 34px;
+  line-height: 2.125em;
 }
 
 .card {
@@ -12,28 +12,31 @@
 }
 .card:hover {
   cursor: pointer;
-  background: #e6e6e6;
+  transform: scale(1.05);
+  transition: 0.2s linear;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  /*text-decoration: none;*/
 }
 .card_title {
   color: #1d1d1d;
   padding-top: 16px;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 .card_text {
   color: #626262;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875em;
+  line-height: 1.313em;
 }
 .card_time {
   color: #1d1d1d;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 21px;
+  font-size: 0.813em;
+  line-height: 1.313em;
   padding-bottom: 20px;
 }
