@@ -26,10 +26,9 @@ const restaurants = {
 	],
 }
 
-const restaurantReducer= (state = restaurants,action)=>{
-    
-    return state;
-
+const restaurantReducer= (state = restaurants, action) => {
+   return state;
 }
+
 
 export default restaurantReducer;

@@ -1,7 +1,17 @@
 .footer {
+	min-width: 300px;
 	margin-top: 50px;
 	background-color: #262626;
   color: #fff
+}
+
+.link {
+	color: #fff;
+}
+
+.link:hover {
+	text-decoration: none;
+	color: #fff;
 }
 
 .logo {

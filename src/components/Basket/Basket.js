@@ -8,15 +8,16 @@ import minus from '../../img/dash.svg'
 import delete_btn from '../../img/x.svg'
 
 const Basket = props => {
+
 	const handleClick = (id) => {
 	    props.addToCart(id); 
 	 }
 
-	const handleRemove = (id)=>{
+	const handleRemove = (id) => {
       props.removeItem(id);
   }
    
-  const handleSubtractQuantity = (id)=>{
+  const handleSubtractQuantity = (id) => {
       props.subFromCart(id);
   }
 
@@ -27,39 +28,42 @@ const Basket = props => {
         	<div>
         		<div className='row' key={snack.id}>
         		
-	    				<div className='col-lg-1'>
-	    					<img src={delete_btn} onClick={() => {handleRemove(snack.id)}}/>
+	    				<div className='col-lg-1 col-md-1'>
+	    					<div className={classes.padding_top_40}>
+	    						<img src={delete_btn} title="Удалить" onClick={() => {handleRemove(snack.id)}}/>
+	    					</div>
 	    				</div>
 						      	
-						  <div className='col-lg-2'>
-						  	<div className={classes.image}>
+						  <div className='col-lg-4 col-md-4'>
+						  	<div className={classes.centred}>
 						  		<img src={snack.img}/>
 						  	</div>
 						  </div>
 
-						  <div className='col-lg-6'>
-						  	{snack.name}
+						  <div className='col-lg-3 col-md-3'>
+						  	<div className={classes.padding_top_40}>
+						  		{snack.name}
+						  	</div>
 						  </div>
 
-						  <div className='col-lg-2'>
-						  	<img src={plus} alt="" width="32" height="32" title="plus"
-										onClick={() => {handleClick(snack.id)}}
-										/>
-										{snack.quantity}
-										<img src={minus} alt="" width="32" height="32" title="minus"
-											onClick={() => {handleSubtractQuantity(snack.id)}}
-										/>
+						  <div className='col-lg-2 col-md-2'>
+						  	<div className={classes.padding_top_40}>
+						  		<img  src={plus} alt="" width="32" height="32" title="Добавить" onClick={() => {handleClick(snack.id)}}/>
+									{snack.quantity}
+									<img  src={minus} alt="" width="32" height="32" title="Убавить" onClick={() => {handleSubtractQuantity(snack.id)}}/>
+						  	</div>
 						  </div>
 
-						  <div className='col-lg-1'>
-						  	{snack.price * snack.quantity} руб.
+						  <div className='col-lg-2 col-md-2'>
+						  	<div className={classes.padding_top_40}>
+						  		{snack.price * snack.quantity} руб.
+						  	</div>
 						  </div>
 	        		
 						</div>
-						<hr className={classes.blackHr}/>
+						<hr className={classes.gray_hr} />
 
         	</div>
-        	
 				)
       })
     ):

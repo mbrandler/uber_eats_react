@@ -16,10 +16,9 @@ const snacks = {
       {id:3 ,img: item_4, name: 'Соленья ассорти', price: 320, alt: 'Соленья', restaurant: 'pushkin'},
       {id:4 ,img: item_5, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало', restaurant: 'pushkin'},
       {id:5 ,img: item_6, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий', restaurant: 'pushkin'},   
-      {id:6 ,img: item_1, name: 'Сельдь бургер с салом и зеленью березы', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
+      {id:6 ,img: item_1, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
     ],
-	addedSnacks: [{id:1 ,img: item_2, name: 'Грибы маринованные', price: 300, alt: 'Грибы', quantity: 2},
-                {id:5 ,img: item_6, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий' , quantity: 1}], // захардкодила для удобства верстки корзины
+	addedSnacks: [],
 	total: 950
 }
 

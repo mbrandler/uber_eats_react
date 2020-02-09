@@ -4,17 +4,18 @@ import Name from './Name.js'
 import Snacks from './Snacks.js'
 import { connect } from 'react-redux'
 
+
 class Menu extends Component {
   render() {
 
-    const restaurantID = this.props.location.pathname.substr(6)
-    const menu = this.props.menu.filter(item => item.restaurant === restaurantID)
+    const restaurantID = this.props.location.pathname.replace('/menu/', '')
 
-    console.log('menu',  this.props.menu)
+    const menu = this.props.menu.filter(item => item.restaurant === restaurantID)
     const restaurant = this.props.restaurant.find(item => item.id === restaurantID)
+
     return (
         <div>
-            <Name nameData={restaurant}/>
+            <Name restaurantData={restaurant}/>
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-8 col-md-10'>
@@ -43,7 +44,7 @@ class Menu extends Component {
   }
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
 return {
     menu: state.snacksReducer.snackData,
     restaurant: state.restaurantReducer.restaurantData  // временно захардкодила только "пушкин"

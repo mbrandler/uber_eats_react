@@ -24,7 +24,7 @@ const Navbar = () => {
 								</div>
 								
 								<div className='col-6'>	
-									<Link to="/basket"><img className={classes.basket} src={basket} alt='basket'/></Link>
+									<Link to="/basket"><img title="Корзина" className={classes.basket} src={basket} alt='basket'/></Link>
 								</div>
 							  
 						</div>

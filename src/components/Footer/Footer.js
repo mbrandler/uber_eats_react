@@ -21,22 +21,22 @@ const Footer = () => {
 					<hr />
 
 					<div className='row'>
-						<div className='col-lg-4'>
+						<div className='col-lg-4 col-md-4'>
 							<Language />
 							<Social />
 						</div>
 						
-						<div className='col-lg-4'>
+						<div className='col-lg-4 col-md-4'>
 							<p>Об UberEats</p>
 							<p>Станьте партнёром по доставке</p>
 							<p>Станьте партнёром-рестораном</p>
 						</div>
 
-						<div className='col-lg-4'>
+						<div className='col-lg-4 col-md-2'>
 							<p>Все города</p>
 							<p>Цены</p>
 							<p>Помощь</p>
-							<p><Link to="/faq">FAQs</Link></p>
+							<p><Link to="/faq" className={classes.link}>FAQs</Link></p>
 						</div>
 					</div>
 
@@ -44,8 +44,8 @@ const Footer = () => {
 
 						<div className={classes.badges}>
 							<div className='row'>
-								<img className='col-lg-6' src={AppStore} alt='AppStore'/>
-								<img className='col-lg-6' src={Gplay} alt='GooglePlay'/>
+								<img className='col-lg-6 col-md-6 col-sm-6' src={AppStore} alt='AppStore'/>
+								<img className='col-lg-6 col-md-6 col-sm-6' src={Gplay} alt='GooglePlay'/>
 							</div>
 						</div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
 							<p>© 2017 Uber Technologies Inc.</p>
 							<p>Обработка персональных данных</p>
 							<p>Пользовательское соглашение</p>
-							<button className={classes.topbutton} onClick={() =>{topFunction()}}>
+							<button className={classes.topbutton} onClick={() => {topFunction()}}>
 								<img src={arrow} alt='arrow' />
 							</button>
 						</div>
