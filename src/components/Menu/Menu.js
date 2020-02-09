@@ -8,7 +8,7 @@ class Menu extends Component {
   render() {
 
     const restaurantID = this.props.location.pathname.substr(6)
-    const menu = this.props.menu[restaurantID]
+    const menu = this.props.menu.filter(item => item.restaurant === restaurantID)
 
     console.log('menu',  this.props.menu)
     const restaurant = this.props.restaurant.find(item => item.id === restaurantID)
@@ -39,7 +39,6 @@ class Menu extends Component {
                 </div>
             </div>
         </div>
-      
     );
   }
 }

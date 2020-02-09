@@ -11,7 +11,6 @@ const Snacks = props => {
 		console.log('afterCleck', props.menu.addedSnacks)
 	}
 	const snacks = props.snackData.map((snack) => {
-
 		return (
 			<div className='col-lg-6 col-md-12 col-sm-12' key={snack.id}>
 				<div className="card mb-3">
@@ -36,22 +35,20 @@ const Snacks = props => {
 		)
 	})
 
-		return <div className='row'>{snacks}</div>
+	return <div className='row'>{snacks}</div>
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
 	return {
-	    menu: state.snacksReducer,
-	    }
+	  menu: state.snacksReducer,
+	}
 }
 
-const mapDispatchToProps= (dispatch)=>{
+const mapDispatchToProps= (dispatch) => {
 	return{
-	   addToCart: (id)=>{dispatch(addToCart(id))}
-
-	     }
+	  addToCart: (id) => {dispatch(addToCart(id))}
+	}
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps) (Snacks)
-
-
