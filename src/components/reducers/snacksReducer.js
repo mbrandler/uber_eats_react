@@ -19,7 +19,7 @@ const snacks = {
       {id:6 ,img: item_1, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
     ],
 	addedSnacks: [],
-	total: 950
+	total: 0
 }
 
 
