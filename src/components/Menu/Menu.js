@@ -15,7 +15,20 @@ class Menu extends Component {
 
     return (
         <div>
-            <Name restaurantData={restaurant}/>
+            <div className={classes.name}>
+                <img  className={classes.background} src={restaurant.background} alt="restaurant's food" />
+                <div className='container'>
+                    <div className='col-md-5'>
+                        <div className={classes.restaurant_card}>
+                        <h1 className={classes.rest_name}>{restaurant.name}</h1>
+                        <p className={classes.info}>{restaurant.text}
+                            <span className={classes.time}>{restaurant.time}</span>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-8 col-md-10'>
