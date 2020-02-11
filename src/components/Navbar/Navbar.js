@@ -16,7 +16,7 @@ const Navbar = () => {
 						</div>
 					</div>
 
-					<div className="col-lg-2 offset-lg-8 col-md-3 offset-md-2 col-sm-2">
+					<div className="col-lg-2 offset-lg-8 col-md-3 offset-md-7 col-sm-2 offset-sm-8">
 						<div className='row'>
 								
 								<div className='col-6 col-sm-0'>	
