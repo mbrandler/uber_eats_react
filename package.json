@@ -1,7 +1,7 @@
 {
-  "homepage": "http://u_react.github.io",
+  "homepage": "http://mbrandler.github.io",
   "name": "uber_eats_react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",

@@ -19,6 +19,7 @@ class App extends Component {
           <Route exact path="/menu/:id" component={Menu}/>
           <Route exact path="/basket" component={Basket}/>
           <Route exact path="/faq" component={FAQ}/>
+          <Route exact path="/uber_eats_react/" component={Restaurants}/>  // для github.io
         </Switch>
         <Footer />
       </BrowserRouter>
