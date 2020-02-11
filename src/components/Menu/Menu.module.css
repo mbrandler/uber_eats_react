@@ -1,3 +1,53 @@
+.name {
+	width: 100%;
+	height: 370px;
+	margin-top: 72px;
+}
+
+.background {
+	min-width: 370px;
+	object-fit: cover;
+	width: 100%;
+	height: 55%;
+	position: absolute;
+	z-index: 0;
+	padding-bottom: 1px;
+}
+
+.restaurant_card {
+	display: inline-block;
+	position: absolute;
+	margin-top: 80px;
+	width: 100%;
+	height: 240px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.time {
+	width: 100px;
+	height: 32px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 0.813em;
+	background-color: #262626;
+	border-radius: 16px;
+	color: #FFFFFF;
+}
+
+.rest_name {
+	font-size: 2.250em;
+	margin-top: 7%;
+	margin-left: 10%;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin: 20% 10%;
+}
+
+
 .snacks {
 	margin-top: 60px;
 	margin-bottom: 35px;
