@@ -20,12 +20,12 @@ class Menu extends Component {
                 <div className='row'>
                     <div className='col-lg-8 col-md-10'>
                         <div className={classes.filter}>
-                            <a href="#">Закуски</a>
-                            <a href="#">Салаты</a>
-                            <a href="#">Супы</a>
-                            <a href="#">Горячие блюда</a>
-                            <a href="#">Гарниры</a>
-                            <a href="#">Десерты</a>
+                            <a href="#Закуски">Закуски</a>
+                            <a href="#Салаты">Салаты</a>
+                            <a href="#Супы">Супы</a>
+                            <a href="#Горячее">Горячие блюда</a>
+                            <a href="#Гарниры">Гарниры</a>
+                            <a href="#Десерты">Десерты</a>
                         </div>                       
                     </div>
                 </div>

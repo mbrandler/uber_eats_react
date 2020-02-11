@@ -10,7 +10,7 @@ const FAQ = () => {
 				<p>Это мой первый учебный проект в области разработки сайтов.</p>
 				<p>Здесь я постаралась применить полученные мной знания по HTML, CSS, Bootstrap, React, Redux и пр.</p>
 
-				<a href="https://github.com/mbrandler" target="_blank">Ссылка на githab</a>
+				<a href="https://github.com/mbrandler" rel="noopener noreferrer" target="_blank">Ссылка на githab</a>
 			</div>
 		</div>
 		)
