@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fece87ace34ee10c14862f3563c2666",
+    "revision": "71dc4232f3135c935184f8c9c7effe77",
     "url": "/uber_eats_react/index.html"
   },
   {
-    "revision": "b0552e2fb1875ecc5aa9",
+    "revision": "9d4819a43ad4d1052955",
     "url": "/uber_eats_react/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "8282eaf2d701151a22a4",
-    "url": "/uber_eats_react/static/css/main.4cb9e546.chunk.css"
+    "revision": "38e59f93e0ded9fa4df7",
+    "url": "/uber_eats_react/static/css/main.39dd5852.chunk.css"
   },
   {
-    "revision": "b0552e2fb1875ecc5aa9",
-    "url": "/uber_eats_react/static/js/2.fd5842ea.chunk.js"
+    "revision": "9d4819a43ad4d1052955",
+    "url": "/uber_eats_react/static/js/2.d72b4a95.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/uber_eats_react/static/js/2.fd5842ea.chunk.js.LICENSE"
+    "url": "/uber_eats_react/static/js/2.d72b4a95.chunk.js.LICENSE"
   },
   {
-    "revision": "8282eaf2d701151a22a4",
-    "url": "/uber_eats_react/static/js/main.2e22fa13.chunk.js"
+    "revision": "38e59f93e0ded9fa4df7",
+    "url": "/uber_eats_react/static/js/main.30c2cccd.chunk.js"
   },
   {
     "revision": "8e43eba5585eeab4b036",

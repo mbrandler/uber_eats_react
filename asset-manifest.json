@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/uber_eats_react/static/css/main.4cb9e546.chunk.css",
-    "main.js": "/uber_eats_react/static/js/main.2e22fa13.chunk.js",
-    "main.js.map": "/uber_eats_react/static/js/main.2e22fa13.chunk.js.map",
+    "main.css": "/uber_eats_react/static/css/main.39dd5852.chunk.css",
+    "main.js": "/uber_eats_react/static/js/main.30c2cccd.chunk.js",
+    "main.js.map": "/uber_eats_react/static/js/main.30c2cccd.chunk.js.map",
     "runtime-main.js": "/uber_eats_react/static/js/runtime-main.f1799d53.js",
     "runtime-main.js.map": "/uber_eats_react/static/js/runtime-main.f1799d53.js.map",
     "static/css/2.67123b20.chunk.css": "/uber_eats_react/static/css/2.67123b20.chunk.css",
-    "static/js/2.fd5842ea.chunk.js": "/uber_eats_react/static/js/2.fd5842ea.chunk.js",
-    "static/js/2.fd5842ea.chunk.js.map": "/uber_eats_react/static/js/2.fd5842ea.chunk.js.map",
+    "static/js/2.d72b4a95.chunk.js": "/uber_eats_react/static/js/2.d72b4a95.chunk.js",
+    "static/js/2.d72b4a95.chunk.js.map": "/uber_eats_react/static/js/2.d72b4a95.chunk.js.map",
     "index.html": "/uber_eats_react/index.html",
-    "precache-manifest.695b206a7c20e8dc8d96e6b593eda0ed.js": "/uber_eats_react/precache-manifest.695b206a7c20e8dc8d96e6b593eda0ed.js",
+    "precache-manifest.d5cb0cfb1492c5c1f85281afa5a5113b.js": "/uber_eats_react/precache-manifest.d5cb0cfb1492c5c1f85281afa5a5113b.js",
     "service-worker.js": "/uber_eats_react/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/uber_eats_react/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.4cb9e546.chunk.css.map": "/uber_eats_react/static/css/main.4cb9e546.chunk.css.map",
-    "static/js/2.fd5842ea.chunk.js.LICENSE": "/uber_eats_react/static/js/2.fd5842ea.chunk.js.LICENSE",
+    "static/css/main.39dd5852.chunk.css.map": "/uber_eats_react/static/css/main.39dd5852.chunk.css.map",
+    "static/js/2.d72b4a95.chunk.js.LICENSE": "/uber_eats_react/static/js/2.d72b4a95.chunk.js.LICENSE",
     "static/media/1-6.966838b6.png": "/uber_eats_react/static/media/1-6.966838b6.png",
     "static/media/1-7.2829a5fc.png": "/uber_eats_react/static/media/1-7.2829a5fc.png",
     "static/media/1-8.7803f4c3.png": "/uber_eats_react/static/media/1-8.7803f4c3.png",
@@ -49,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.f1799d53.js",
     "static/css/2.67123b20.chunk.css",
-    "static/js/2.fd5842ea.chunk.js",
-    "static/css/main.4cb9e546.chunk.css",
-    "static/js/main.2e22fa13.chunk.js"
+    "static/js/2.d72b4a95.chunk.js",
+    "static/css/main.39dd5852.chunk.css",
+    "static/js/main.30c2cccd.chunk.js"
   ]
 }
