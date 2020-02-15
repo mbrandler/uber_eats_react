@@ -4,13 +4,23 @@ import classes from './Snacks.module.css'
 import {addToCart} from '../actions/cartActions.js'
 import plus from '../../img/plus.svg'
 
+import { useToasts } from 'react-toast-notifications';
+
+
 const Snacks = props => {
+	const { addToast } = useToasts()
+
 	const handleClick = (id) => {
 		props.addToCart(id);
+		addToast('Добавлено в корзину 1 шт: ' + props.snackData.find(item => id === item.id).name , {
+      appearance: 'success',
+      autoDismiss: true,
+    })
 	}
 	const snacks = props.snackData.map((snack) => {
 		return (
 			<div className='col-lg-6 col-md-12 col-sm-12 col-xs-12' key={snack.id}>
+			
 				<div className="card mb-3">
 				  <div className="row no-gutters">
 				    

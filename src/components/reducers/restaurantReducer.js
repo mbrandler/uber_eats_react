@@ -13,6 +13,7 @@ import pushkin_bg from '../../img/Uber Eats/Restaurant/pushkin.png'
 
 const restaurants = {
 	restaurantData: [
+		{ id: 'pushkin', background: pushkin_bg, img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
 	  { id: 'mcdonalds', background: mcd_bg, img: mcd, alt: 'Макдоналдс', name: 'Макдоналдс - Газетный', text: '₽₽ • Бургеры', time: '25 - 30 мин'},
 	  { id: 'dimsum', img: DimSum, alt: 'DimSum & Co', name: 'DimSum & Co - ЦДМ', text: '₽ • Японская • Китайская • Азиатская', time: '40 - 50 мин' },
 	  { id: 'dvizhok', img: ДвижОК, alt: 'ДвижОК', name: 'ДвижОК — Манежная', text: '₽ • Американская • Европейская', time: '35 - 45 мин' },
@@ -22,7 +23,6 @@ const restaurants = {
 	  { id: 'pizz', img: Pizz, alt: 'PIZZELOVE', name: 'PIZZELOVE', text: '₽₽ • Пицца', time: '15 - 25 мин' },
 	  { id: 'zyu', img: Zю, alt: 'Zю кафе', name: 'Zю кафе — Тверская', text: '₽₽ • Японская', time: '25 - 35 мин' },
 	  { id: 'bq', img: bq, alt: 'Bar BQ', name: 'Bar BQ Cafe — Манежная', text: '₽₽₽ • Европейская', time: '30 - 40 мин' },
-	  { id: 'pushkin', background: pushkin_bg, img: pushkin, alt: 'Pushkin', name: 'Трактир «Пушкин»', text: '₽₽₽ • Русская', time: '30 - 40 мин' },
 	],
 }
 

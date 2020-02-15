@@ -1,42 +1,65 @@
 import React from 'react'
 import classes from './Basket.module.css'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import {addToCart, subFromCart, removeItem} from '../actions/cartActions.js'
 import plus from '../../img/plus.svg'
 import minus from '../../img/dash.svg'
 import delete_btn from '../../img/x.svg'
+import { ToastProvider, useToasts } from 'react-toast-notifications';
 
-const Basket = props => {
+
+const Basket  = props => (
+
+	<ToastProvider autoDismissTimeout={2000}>
+    <BasketItems items={props}/>
+  </ToastProvider>
+)
+
+
+const BasketItems = props => {
+	props = props.items  //  переназначила пропс
+	const { addToast } = useToasts()
 
 	const handleClick = (id) => {
 	    props.addToCart(id); 
+	    addToast('Добавлено в корзину 1 шт: ' + props.snacks.find(item => id === item.id).name , {
+      appearance: 'success',
+      autoDismiss: true,
+    })
 	 }
 
 	const handleRemove = (id) => {
       props.removeItem(id);
+      addToast('Удалено из корзины: ' + props.snacks.find(item => id === item.id).name , {
+      appearance: 'error',
+      autoDismiss: true,
+    })
   }
    
   const handleSubtractQuantity = (id) => {
       props.subFromCart(id);
+      addToast('Удалено из корзины 1 шт: ' + props.snacks.find(item => id === item.id).name , {
+      appearance: 'warning',
+      autoDismiss: true,
+    })
   }
 
 	const addedSnacks = props.snacks.length ?
     (  
       props.snacks.map(snack => {
         return(
-        	<div>
-        		<div className='row' key={snack.id}>
+        	<div key={snack.id}>
+        		<div className='row' >
         		
 	    				<div className='col-lg-1 col-md-1'>
 	    					<div className={classes.padding_top_40}>
-	    						<img src={delete_btn} title="Удалить" onClick={() => {handleRemove(snack.id)}}/>
+	    						<img src={delete_btn} title="Удалить" alt='Удалить из корзины' onClick={() => {handleRemove(snack.id)}}/>
 	    					</div>
 	    				</div>
 						      	
 						  <div className='col-lg-4 col-md-4'>
 						  	<div className={classes.centred}>
-						  		<img src={snack.img}/>
+						  		<img src={snack.img} alt='Фото'/>
 						  	</div>
 						  </div>
 
@@ -72,15 +95,18 @@ const Basket = props => {
 	    )
 
   return(
-    <div className="container">
-        <div className={classes.basket2}>
-					<h1>Ваш заказ</h1>
-						{addedSnacks}  	          
-					<h2>Итого: {props.total} руб.</h2>
-			</div>
-    </div>
+  	
+	    <div className="container">
+	        <div className={classes.basket2}>
+						<h1>Ваш заказ</h1>
+							{addedSnacks}         
+						<h2>Итого: {props.total} руб.</h2>
+				</div>
+	    </div>
+
  	)
 }
+
 
 const mapStateToProps = (state)=>{
     return{

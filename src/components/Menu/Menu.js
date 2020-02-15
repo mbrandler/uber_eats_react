@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import classes from './Menu.module.css'
-import Name from './Name.js'
 import Snacks from './Snacks.js'
 import { connect } from 'react-redux'
+import { ToastProvider } from 'react-toast-notifications';
 
 
 class Menu extends Component {
@@ -14,7 +14,7 @@ class Menu extends Component {
     const restaurant = this.props.restaurant.find(item => item.id === restaurantID)
 
     return (
-        <div>
+        <ToastProvider autoDismissTimeout={2000}>
             <div className={classes.name}>
                 <img  className={classes.background} src={restaurant.background} alt="restaurant's food" />
                 <div className='container'>
@@ -32,7 +32,7 @@ class Menu extends Component {
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-8 col-md-10'>
-                        <div className={classes.filter}>
+                        <div className={classes.filter_items}>
                             <a href="#Закуски">Закуски</a>
                             <a href="#Салаты">Салаты</a>
                             <a href="#Супы">Супы</a>
@@ -50,7 +50,7 @@ class Menu extends Component {
                 <h1 className={classes.snacks}>Закуски</h1>
                 <Snacks snackData={menu}/>
             </div>
-        </div>
+        </ToastProvider>
     );
   }
 }

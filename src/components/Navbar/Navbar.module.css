@@ -15,12 +15,10 @@
 .logo {
   align-self: flex-start;
 	padding: 20px 0 0 20px;
-  /*margin: auto;*/
 }
 
 .sign_in {
   margin-top: 12px;
-  /*margin-right: 15px;*/
   font-size: 0.813em;
   font-weight: 500;
 
@@ -46,17 +44,4 @@
   display: flex;
   align-self: flex-end;
   margin-left: auto;
-}
-
-@media screen and (max-width: 991px) {
-  .sign_in {
-  }
-
-}
-
-@media screen and (max-width: 575px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-  }
 }

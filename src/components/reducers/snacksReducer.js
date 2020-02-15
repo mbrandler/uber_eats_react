@@ -4,6 +4,11 @@ import item_3 from '../../img/Uber Eats/Restaurant/semga.png'
 import item_4 from '../../img/Uber Eats/Restaurant/solenia.png'
 import item_5 from '../../img/Uber Eats/Restaurant/salo.png'
 import item_6 from '../../img/Uber Eats/Restaurant/yazik.png'
+import item_7 from '../../img/Uber Eats/Restaurant/chikenburger.png'
+import item_8 from '../../img/Uber Eats/Restaurant/cheeseburger.png'
+import item_9 from '../../img/Uber Eats/Restaurant/bigmac.png'
+import item_10 from '../../img/Uber Eats/Restaurant/bigtasty.png'
+import item_11 from '../../img/Uber Eats/Restaurant/potato.png'
 import { ADD_TO_CART, SUB_FROM_CART, REMOVE_ITEM } from '../actions/action-types/cart-actions.js'
 
 
@@ -16,7 +21,11 @@ const snacks = {
       {id:3 ,img: item_4, name: 'Соленья ассорти', price: 320, alt: 'Соленья', restaurant: 'pushkin'},
       {id:4 ,img: item_5, name: 'Сало домашнее с горчицей', price: 320, alt: 'Сало', restaurant: 'pushkin'},
       {id:5 ,img: item_6, name: 'Язык говяжий с хреном', price: 350, alt: 'Язык говяжий', restaurant: 'pushkin'},   
-      {id:6 ,img: item_1, name: 'Сельдь на бородинском хлебе', text: 'С яйцом и огурцом', price: 240, alt: 'Селёдка', restaurant: 'mcdonalds'},
+      {id:6 ,img: item_7, name: 'Чикенбургер', text: 'С яйцом и огурцом', price: 50, alt: 'Чикенбургер', restaurant: 'mcdonalds'},
+      {id:7 ,img: item_8, name: 'Чизбургер', text: 'С яйцом и огурцом', price: 50, alt: 'Чизбургер', restaurant: 'mcdonalds'},
+      {id:8 ,img: item_9, name: 'Биг Мак', text: 'С яйцом и огурцом', price: 160, alt: 'Биг Мак', restaurant: 'mcdonalds'},
+      {id:9 ,img: item_10, name: 'Биг Тейсти', text: 'С яйцом и огурцом', price: 190, alt: 'Биг Тейсти', restaurant: 'mcdonalds'},
+      {id:10 ,img: item_11, name: 'Картофель по-деревенски', text: 'С яйцом и огурцом', price: 70, alt: 'Картофель по-деревенски', restaurant: 'mcdonalds'},
     ],
 	addedSnacks: [],
 	total: 0

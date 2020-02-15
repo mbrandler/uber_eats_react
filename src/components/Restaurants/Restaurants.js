@@ -35,7 +35,7 @@ class Restaurants extends Component {
 	render () {
 		return (
 			<div className='container'>
-				<input type="text" className="search-form" placeholder="Поиск по ресторанам и кухням" onType/>
+				<input type="text" className="search-form" placeholder="Поиск по ресторанам и кухням"/>
       	<h1 className={classes.rest}>Рестораны в Москве</h1>
 				<Card restaurantData={this.props.restaurantData} />
 			</div>
