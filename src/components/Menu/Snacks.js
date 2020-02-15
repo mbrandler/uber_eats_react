@@ -10,11 +10,11 @@ const Snacks = props => {
 	}
 	const snacks = props.snackData.map((snack) => {
 		return (
-			<div className='col-lg-6 col-md-12 col-sm-12' key={snack.id}>
+			<div className='col-lg-6 col-md-12 col-sm-12 col-xs-12' key={snack.id}>
 				<div className="card mb-3">
 				  <div className="row no-gutters">
 				    
-				    <div className="col-md-8 col-sm-4 col-xs-8">
+				    <div className="col-md-8 col-sm-8 col-xs-8">
 				    	
 				      <div className="card-body">
 				        <h5 className={classes.title}>{snack.name}</h5>
@@ -28,11 +28,8 @@ const Snacks = props => {
 					    			<img src={plus} alt="" className={classes.add_btn} width="40" height="40" title="Добавить в корзину" onClick={() => {handleClick(snack.id)}}/>
 					    		</div>
 					    		
-
 					    	</div>
-				        	 
-				        
-				       
+
 				      </div>
 				    </div>
 

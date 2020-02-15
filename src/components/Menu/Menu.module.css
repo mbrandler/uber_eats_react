@@ -73,4 +73,13 @@
 	border-color: rgba(117, 117, 117, 0.2);
 }
 
-@media (max-width: )
+@media screen and (max-width: 767px) {
+	.restaurant_card {
+		width: 70%;
+	}
+
+	.snacks {
+		text-align: center;
+		text-decoration: underline;
+	}
+}

@@ -8,13 +8,12 @@
 
     background-color: #fff;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
-    z-index: 1000;
+    z-index: 10;
 }
 
 .logo {
 	padding-top: 20px;
   margin: auto;
-  max-width: 125px;
 }
 
 .sign_in {
@@ -38,10 +37,20 @@
 }
 
 .basket {
-
-  padding-top: 17px;
   margin-left: 30px;
 }
 
 
 
+@media screen and (max-width: 991px) {
+  .sign_in {
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+}
