@@ -47,10 +47,8 @@ class Menu extends Component {
             <hr className={classes.menu_line}/>
 
             <div className='container'>
-                <div>
-                    <h1 className={classes.snacks}>Закуски</h1>
-                    <Snacks snackData={menu}/>
-                </div>
+                <h1 className={classes.snacks}>Закуски</h1>
+                <Snacks snackData={menu}/>
             </div>
         </div>
     );
