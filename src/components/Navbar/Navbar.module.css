@@ -1,4 +1,5 @@
 .header {
+    display: flex;
 	  position: fixed;
     top: 0;
     left: 0;
@@ -12,8 +13,9 @@
 }
 
 .logo {
-	padding-top: 20px;
-  margin: auto;
+  align-self: flex-start;
+	padding: 20px 0 0 20px;
+  /*margin: auto;*/
 }
 
 .sign_in {
@@ -37,10 +39,14 @@
 }
 
 .basket {
-  margin-left: 30px;
+  margin: 20px 20px 0 30px;
 }
 
-
+.navbar_items {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+}
 
 @media screen and (max-width: 991px) {
   .sign_in {
