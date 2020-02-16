@@ -58,7 +58,7 @@ class Menu extends Component {
 const mapStateToProps = (state) => {
 return {
     menu: state.snacksReducer.snackData,
-    restaurant: state.restaurantReducer.restaurantData  // временно захардкодила только "пушкин"
+    restaurant: state.restaurantReducer.restaurantData
     }
 }
 

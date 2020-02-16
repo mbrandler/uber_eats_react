@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import classes from './Snacks.module.css'
 import {addToCart} from '../actions/cartActions.js'
 import plus from '../../img/plus.svg'
-
 import { useToasts } from 'react-toast-notifications';
 
 
