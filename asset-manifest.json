@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/uber_eats_react/static/css/main.b1ae12da.chunk.css",
-    "main.js": "/uber_eats_react/static/js/main.7231553d.chunk.js",
-    "main.js.map": "/uber_eats_react/static/js/main.7231553d.chunk.js.map",
+    "main.js": "/uber_eats_react/static/js/main.70abae7c.chunk.js",
+    "main.js.map": "/uber_eats_react/static/js/main.70abae7c.chunk.js.map",
     "runtime-main.js": "/uber_eats_react/static/js/runtime-main.cb963839.js",
     "runtime-main.js.map": "/uber_eats_react/static/js/runtime-main.cb963839.js.map",
     "static/css/2.64a99b10.chunk.css": "/uber_eats_react/static/css/2.64a99b10.chunk.css",
-    "static/js/2.42d1dec7.chunk.js": "/uber_eats_react/static/js/2.42d1dec7.chunk.js",
-    "static/js/2.42d1dec7.chunk.js.map": "/uber_eats_react/static/js/2.42d1dec7.chunk.js.map",
+    "static/js/2.f0d340d8.chunk.js": "/uber_eats_react/static/js/2.f0d340d8.chunk.js",
+    "static/js/2.f0d340d8.chunk.js.map": "/uber_eats_react/static/js/2.f0d340d8.chunk.js.map",
     "index.html": "/uber_eats_react/index.html",
-    "precache-manifest.01a9a3195fdf63b40b590abf353ed8af.js": "/uber_eats_react/precache-manifest.01a9a3195fdf63b40b590abf353ed8af.js",
+    "precache-manifest.8a61f9619360af7dda3492175c2a3184.js": "/uber_eats_react/precache-manifest.8a61f9619360af7dda3492175c2a3184.js",
     "service-worker.js": "/uber_eats_react/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/uber_eats_react/static/css/2.64a99b10.chunk.css.map",
     "static/css/main.b1ae12da.chunk.css.map": "/uber_eats_react/static/css/main.b1ae12da.chunk.css.map",
-    "static/js/2.42d1dec7.chunk.js.LICENSE": "/uber_eats_react/static/js/2.42d1dec7.chunk.js.LICENSE",
+    "static/js/2.f0d340d8.chunk.js.LICENSE": "/uber_eats_react/static/js/2.f0d340d8.chunk.js.LICENSE",
     "static/media/1-6.966838b6.png": "/uber_eats_react/static/media/1-6.966838b6.png",
     "static/media/1-7.2829a5fc.png": "/uber_eats_react/static/media/1-7.2829a5fc.png",
     "static/media/1-8.7803f4c3.png": "/uber_eats_react/static/media/1-8.7803f4c3.png",
@@ -49,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.cb963839.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.42d1dec7.chunk.js",
+    "static/js/2.f0d340d8.chunk.js",
     "static/css/main.b1ae12da.chunk.css",
-    "static/js/main.7231553d.chunk.js"
+    "static/js/main.70abae7c.chunk.js"
   ]
 }
