@@ -17,7 +17,7 @@ class Menu extends Component {
         <ToastProvider autoDismissTimeout={2000}>
             <div className={classes.name}>
                 <img  className={classes.background} src={restaurant.background} alt="restaurant's food" />
-                <div className='container'>
+                <div className={`container ${classes.restaurant_container}` }>
                     <div className='col-md-5'>
                         <div className={classes.restaurant_card}>
                             <h1 className={classes.rest_name}>{restaurant.name}</h1>

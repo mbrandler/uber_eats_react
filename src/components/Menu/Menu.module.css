@@ -4,21 +4,22 @@
 	margin-top: 72px;
 }
 
+.restaurant_container {
+	position: relative;
+	height: 300px;
+	top: -370px;
+}
 .background {
 	min-width: 370px;
 	width: 100%;
-	height: 48vh;
+	height: 100%;
 	object-fit: cover;
-	/*height: 55%;*/
-	/*position: absolute;*/
-	/*z-index: 0;*/
-	/*padding-bottom: 1px;*/
 }
 
 .restaurant_card {
 	display: inline-block;
 	position: absolute;
-	top: -40vh;
+	top: 55px;
 	width: 100%;
 	height: 240px;
 	background-color: #fff;
@@ -52,7 +53,6 @@
 .snacks {
 	margin-top: 60px;
 	margin-bottom: 35px;
-	/*height: 10vh;*/
 	font-weight: normal;
 	font-size: 1.375em;
 	line-height: 2.125em;
@@ -63,7 +63,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 15vh;
+	height: 10vh;
 }
 
 .filter_items a {
