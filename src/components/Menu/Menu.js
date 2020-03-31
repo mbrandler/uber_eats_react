@@ -20,11 +20,11 @@ class Menu extends Component {
                 <div className='container'>
                     <div className='col-md-5'>
                         <div className={classes.restaurant_card}>
-                        <h1 className={classes.rest_name}>{restaurant.name}</h1>
-                        <p className={classes.info}>{restaurant.text}
-                            <span className={classes.time}>{restaurant.time}</span>
-                        </p>
-                    </div>
+                            <h1 className={classes.rest_name}>{restaurant.name}</h1>
+                            <p className={classes.info}>{restaurant.text}
+                                <span className={classes.time}>{restaurant.time}</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ class Menu extends Component {
                             <a href="#Горячее">Горячие блюда</a>
                             <a href="#Гарниры">Гарниры</a>
                             <a href="#Десерты">Десерты</a>
-                        </div>                       
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,6 +50,7 @@ class Menu extends Component {
                 <h1 className={classes.snacks}>Закуски</h1>
                 <Snacks snackData={menu}/>
             </div>
+
         </ToastProvider>
     );
   }
