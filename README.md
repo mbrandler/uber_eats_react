@@ -17,7 +17,7 @@
 
 Чтобы запустить приложение локально скачайте репозиторий, введите 
 ```
-npm install / yarn install
+yarn install / npm install 
 ```
 затем запустите:
 ```
@@ -27,8 +27,8 @@ yarn start / npm start
 Для деплоймента на github pages:
 ```
 Измените в файле GITHUBUSERNAME ./package.json "homepage":"http://GITHUBUSERNAME.github.io/uber_eats_react"
-yarn run build
-npm run deploy
+yarn run build / npm run build
+yarn run deploy / npm run deploy
 ```
 
 [Мое резюме](https://hh.ru/resume/61e415a1ff0750dc180039ed1f704132535a71)
