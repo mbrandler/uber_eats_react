@@ -1,0 +1,23 @@
+.language {
+	display: flex;
+  margin-top: 32px;
+  width: 227px;
+  height: 40px;
+  font-size: 0.813em;
+  line-height: 0.938em;
+  background: #3B3B3B;	
+}
+
+.language:hover {
+  cursor: pointer;
+}
+
+.world {
+  margin: 12px 16px;
+}
+p {
+  margin-top: 12px;
+}
+.arrow {
+  margin-left: 106px;
+}

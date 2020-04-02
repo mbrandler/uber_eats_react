@@ -1,11 +1,32 @@
-import React from 'react';
+import React, {Component} from 'react'
+import './App.css'
+import Restaurants from './components/Restaurants/Restaurants.js'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar.js'
+import Footer from './components/Footer/Footer.js'
+import Menu from './components/Menu/Menu.js'
+import Basket from './components/Basket/Basket.js'
+import FAQ from './components/FAQ/FAQ.js'
 
-import './App.css';
 
-function App() {
-  return (
-    
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Navbar />        
+        <Switch>
+          <Route exact path="/" component={Restaurants}/>
+          <Route exact path="/menu/:id" component={Menu}/>
+          <Route exact path="/basket" component={Basket}/>
+          <Route exact path="/faq"  component={FAQ}/>
+          <Route exact path="/uber_eats_react/" component={FAQ} />   {/*для github.io*/}
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    );
+  }
 }
+
+
 
 export default App;

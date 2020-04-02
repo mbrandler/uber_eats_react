@@ -1,0 +1,17 @@
+.title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.price {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.938em;
+	line-height: 1.313em;
+}
+
+.add_btn:hover{
+	cursor: pointer;
+}
