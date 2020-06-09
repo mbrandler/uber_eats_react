@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import restaurantReducer from './restaurantReducer.js'
+import restaurantReducer from './restaurant-reducer.js'
 import snacksReducer from './snacksReducer.js'
 
 export default combineReducers({
