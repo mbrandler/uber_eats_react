@@ -12,6 +12,11 @@
 	line-height: 1.313em;
 }
 
+.add_btn {
+	width: 40px;
+	height: 40px;
+}
+
 .add_btn:hover{
 	cursor: pointer;
 }

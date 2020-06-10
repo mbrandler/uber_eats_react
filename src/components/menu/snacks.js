@@ -34,7 +34,7 @@ const Snacks = props => {
 					    		</div>
 
 					    		<div className='col-6'>
-					    			<img src={plus} alt="" className={classes.add_btn} width="40" height="40" title="Добавить в корзину" onClick={() => {handleClick(snack.id)}}/>
+					    			<img src={plus} alt="" className={classes.add_btn} title="Добавить в корзину" onClick={() => {handleClick(snack.id)}}/>
 					    		</div>
 
 					    	</div>

@@ -14,3 +14,13 @@
 .centred {
 	text-align: center;
 }
+
+.remove_btn, .add_btn, .delete_btn {
+	width: 40px;
+	height: 40px;
+}
+
+.photo {
+	width: 200px;
+	height: auto;
+}

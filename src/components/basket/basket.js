@@ -54,7 +54,7 @@ const BasketItems = props => {
 
                             <div className='col-lg-1 col-md-1'>
                                 <div className={classes.padding_top_40}>
-                                    <img src={delete_btn} title="Удалить" alt='Удалить из корзины' onClick={() => {
+                                    <img src={delete_btn} className={classes.delete_btn} title="Удалить" alt='Удалить из корзины' onClick={() => {
                                         handleRemove(id)
                                     }}/>
                                 </div>
@@ -62,7 +62,7 @@ const BasketItems = props => {
 
                             <div className='col-lg-4 col-md-4'>
                                 <div className={classes.centred}>
-                                    <img src={img} alt='Фото'/>
+                                    <img src={img} className={classes.photo} alt='Фото'/>
                                 </div>
                             </div>
 
@@ -74,11 +74,11 @@ const BasketItems = props => {
 
                             <div className='col-lg-2 col-md-2'>
                                 <div className={classes.padding_top_40}>
-                                    <img src={plus} alt="" width="32" height="32" title="Добавить" onClick={() => {
+                                    <img src={plus} className={classes.add_btn} alt="" title="Добавить" onClick={() => {
                                         handleClick(id)
                                     }}/>
                                     {quantity}
-                                    <img src={minus} alt="" width="32" height="32" title="Убавить" onClick={() => {
+                                    <img src={minus} className={classes.remove_btn} alt="" title="Убавить" onClick={() => {
                                         handleSubtractQuantity(id)
                                     }}/>
                                 </div>

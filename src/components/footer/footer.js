@@ -36,7 +36,7 @@ const Footer = () => {
 						<p>Все города</p>
 						<p>Цены</p>
 						<p>Помощь</p>
-						<p><Link to="/faq" className={classes.link} onClick={topFunction()}>FAQs</Link></p>
+						<p>FAQs</p>
 					</div>
 				</div>
 

@@ -6,19 +6,18 @@ import Navbar from './components/navbar/navbar.js'
 import Footer from './components/footer/footer.js'
 import Menu from './components/menu/menu.js'
 import Basket from './components/basket/basket.js'
-import FAQ from './components/faq/faq.js'
+import PopUp from './components/faq/popup.js'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <PopUp />
         <Navbar />
         <Switch>
           <Route exact path="/" component={Restaurants}/>
           <Route exact path="/menu/:id" component={Menu}/>
           <Route exact path="/basket" component={Basket}/>
-          <Route exact path="/faq" component={FAQ}/>
-          <Route exact path="/uber_eats_react/" component={FAQ} />   {/*для github.io*/}
         </Switch>
         <Footer />
       </BrowserRouter>
