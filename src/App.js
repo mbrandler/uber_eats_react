@@ -6,7 +6,7 @@ import Navbar from './components/navbar/navbar.js'
 import Footer from './components/footer/footer.js'
 import Menu from './components/menu/menu.js'
 import Basket from './components/basket/basket.js'
-import PopUp from './components/faq/popup.js'
+import PopUp from './components/popup/popup.js'
 
 class App extends Component {
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
           <Route exact path="/" component={Restaurants}/>
           <Route exact path="/menu/:id" component={Menu}/>
           <Route exact path="/basket" component={Basket}/>
+          <Route exact path="/uber_eats_react/" component={Restaurants} /> {/*для github.io*/}
         </Switch>
         <Footer />
       </BrowserRouter>
