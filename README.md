@@ -28,7 +28,3 @@ yarn start / npm start
 yarn run build / npm run build
 yarn run deploy / npm run deploy
 ```
-
-[Мое резюме](https://hh.ru/resume/61e415a1ff0750dc180039ed1f704132535a71)
-
-[Мой телеграм](https://t.me/m_brandler)
